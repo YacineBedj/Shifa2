@@ -1,10 +1,22 @@
 import React from "react"
+import Header from "./components/header"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Box } from "@mui/material"
+import "./style/style.css"
+
 
 function App() {
   return (
-    <div>
-      App
-    </div>
+    <BrowserRouter>
+      <Header/>
+      <Box sx={{minHeight:"100vh"}}>
+        <Routes>
+          <Route path="/" element={<h1>link1</h1>}/>
+          <Route path="/header" element={<h1>link 2</h1>}/>
+          <Route path="/footer" element={<h1>footer</h1>}/>
+        </Routes>
+      </Box>
+    </BrowserRouter>
   )
 }
 

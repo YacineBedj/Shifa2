@@ -1,0 +1,51 @@
+:root{
+    --deep--Green: #21654e;
+    --light--green: #0eb896; 
+    --blue: #02b4ea;
+}
+/* start header  */
+
+/* clolors
+$deep--Green: #21654e
+$light--green: #0eb896v  
+$blue: #02b4ea */
+.nav{
+    background-color: var(--deep--Green);
+}
+.nav--container{
+    position: relative;
+}
+.nav--container h1{
+    color: white;
+    font-size: 25px;
+}
+.nav-links .link{
+    margin-left: 30px;
+    color: white;
+}
+.nav-links .link:hover{
+    color: var(--blue);
+}
+@media(max-width:855px){
+    .nav-links{
+        background-color: rgba(0, 0, 0, 0.582);
+        position: absolute;
+        right: 40px;
+        top: 50px;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .nav-links .link{
+        margin: 0 0 5px 0;
+        padding: 8px;
+        color: white;
+        border-width: 0 0 0 1px;
+    }
+}
+.nav--icon{
+    color: white;
+    font-size: 24px;
+}
+/* end header  */
