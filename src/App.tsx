@@ -1,5 +1,6 @@
 import React from "react"
 import Header from "./components/header"
+import Footer from "./components/Footer"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Box } from "@mui/material"
 import "./style/style.css"
@@ -16,6 +17,7 @@ function App() {
           <Route path="/footer" element={<h1>footer</h1>}/>
         </Routes>
       </Box>
+      <Footer/>
     </BrowserRouter>
   )
 }
