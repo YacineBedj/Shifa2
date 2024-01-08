@@ -29,16 +29,16 @@ export default function Header() {
           <Link to="/" className='link'>Link1</Link>
           <Link to="/" className='link'>Link1</Link>
           <Link to="/" className='link'>Link1</Link>
-          <Link to="/" className='link'>
+          <Link to="/sign-up" className='link'>
             <Button variant='outlined'
               sx={{
                 borderColor:"#02b4ea",
                 color:"white"
 
               }}
-            >Log in</Button>
+            >Sign up</Button>
           </Link>
-          <Link to="/" className='link'>
+          <Link to="/log-in" className='link'>
             <Button variant='contained'
               sx={{
                 backgroundColor:"#02b4ea",

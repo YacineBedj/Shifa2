@@ -49,6 +49,60 @@ $blue: #02b4ea */
     font-size: 24px;
 }
 /* end header  */
+/* start login  */
+.login *{
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.login input{
+    height: 50px;
+    padding: 10px;
+    border-width: 0px 0px 5px 0px;
+    border-color: var(--deep--Green);
+    border-radius: 10px;
+    background-color: #eee;
+    transition: 0.2s;
+    position: relative;
+}
+.login input::after{
+    content: "";
+    height: 1000px;
+    width: 1000px;
+    position: absolute;
+    top: 100%;
+    background-color: rebeccapurple;
+}
+.login input:focus{
+    outline: none;
+    border-color: var(--blue);
+    transform: scale(1.1);
+}
+
+.login .terms input{
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    margin-right: 10px;
+    display: inline;
+    padding: 0px;
+
+}
+.login .submit{
+    height: 50px;
+    border-width: 0px;
+    border-radius: 10px;
+    background-color: var(--deep--Green);
+    font-weight: bold;
+    font-size: medium;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.login .inputError{
+    border-color: red;
+
+}
 /* start footer  */
 .footer{
     background-color: var(--deep--Green);

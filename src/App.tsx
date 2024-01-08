@@ -1,6 +1,8 @@
 import React from "react"
 import Header from "./components/header"
 import Footer from "./components/Footer"
+import  SignUp  from "./components/SignUp"
+import LogIn from "./components/LogIn"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Box } from "@mui/material"
 import "./style/style.css"
@@ -12,9 +14,9 @@ function App() {
       <Header/>
       <Box sx={{minHeight:"100vh"}}>
         <Routes>
-          <Route path="/" element={<h1>link1</h1>}/>
-          <Route path="/header" element={<h1>link 2</h1>}/>
-          <Route path="/footer" element={<h1>footer</h1>}/>
+          <Route path="/home" element={<h1>home</h1>}/>
+          <Route path="/sign-up" element={<SignUp/>}/>
+          <Route path="/log-in" element={<LogIn/>}/>
         </Routes>
       </Box>
       <Footer/>
